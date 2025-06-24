@@ -1,4 +1,4 @@
-ef recommend_artificial_lift(depth_ft, flow_rate_bpd, fluid_type, gas_available):
+def recommend_artificial_lift(depth_ft, flow_rate_bpd, fluid_type, gas_available):
     if flow_rate_bpd < 500 and depth_ft < 6000:
         return "Sucker Rod Pump (SRP)"
     elif fluid_type == "heavy" and depth_ft < 7000:
@@ -21,5 +21,4 @@ gas_available = gas_input == "yes"
 
 # Output
 lift_method = recommend_artificial_lift(depth, flow_rate, fluid_type, gas_available)
-print(f"\n✅ Recommended Artificial Lift Method: {lift_method}") .in this which languahe is included..,,,import numpy as np
-import matplotlib.pyplot as plt
+print(f"\n✅ Recommended Artificial Lift Method: {lift_method}") 
